@@ -1,5 +1,5 @@
 # TODO: complete the function definition in the next line
-def rectangle_info():
+def rectangle_info(width, height):
     """
     Calculate area, perimeter, and diagonal of a rectangle.
 
@@ -16,6 +16,7 @@ def rectangle_info():
     diagonal = (width**2 + height**2) ** 0.5
 
     # TODO: return three calculated variables
+    return area, perimeter, diagonal
 
 
 if __name__ == "__main__":
@@ -23,4 +24,6 @@ if __name__ == "__main__":
     h = float(input("Enter height: "))
 
     # TODO: call function rectangle_info() and pass two arguments: w and h.
+    rect_a, rect_p, rect_d = rectangle_info(w, h)
+
     print(f"Area: {rect_a}, Perimeter: {rect_p}, Diagonal: {rect_d}")
